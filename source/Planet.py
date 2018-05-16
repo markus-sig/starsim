@@ -5,6 +5,7 @@ Created on 27.04.2018
 '''
 import string
 import random
+import Shipyard as yard
 class Planet(object):
     '''
     This class should represent a planet in the starsim game.
@@ -21,7 +22,7 @@ class Planet(object):
         self.typeOfPlanet = typeOfPlanet
         self.name = self.createname()
         self.market = {"Food":1.0, "ConsumerGoods":1.0, "IndustrialGoods":1.0}
-        self.shipyard
+        self.shipyard = yard.Shipyard()
         
     def createname(self):
         return ''.join(random.choice(string.ascii_uppercase + string.digits, k=8))
