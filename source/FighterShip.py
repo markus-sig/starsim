@@ -10,7 +10,6 @@ class FighterShip(Ship):
     FighterClass, will inherite from Class Ship, plus it has fire power
     '''
 
-
     def __init__(self):
         '''
         Constructor, call super constructor and then add firepower as % of price
@@ -23,4 +22,6 @@ class FighterShip(Ship):
     def getFirepower(self):
         return self.firepower
     
+    def toString(self):
+       return ("Name: {}, Firepower: {} ".format(self.name, self.firepower)) + super().toString() 
         
