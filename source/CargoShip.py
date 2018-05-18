@@ -9,8 +9,6 @@ class CargoShip(Ship):
     '''
     CargoClass, will inherite from Class Ship, plus it has storage space
     '''
-
-
     def __init__(self):
         '''
         Constructor, call super constructor and then add cargo space as % of price
@@ -22,5 +20,8 @@ class CargoShip(Ship):
     
     def getCargoUnits(self):
         return self.cargoUnits
+    
+    def toString(self):
+       return ("Name: {}, CargoUnits: {} ".format(self.name, self.cargoUnits)) + super().toString() 
     
         
