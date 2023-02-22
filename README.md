@@ -1,7 +1,7 @@
 This project should become a little command-line Space-Ship-Trading Game. 
 It's main purpose is to teach pupils the use of Github and object orientation and inheritance in Pyhton3. 
 Main features:
-- a player starts with money but now space ships on a planet 
+- a player starts with money but no space ships on a planet 
 - planets come in three categories: agri, tech, war-torn; 
   on planets there will be a shipyard with cargo ships and fighter ships
   there will also be a market place with two type of goods (food and tech), prices will vary
